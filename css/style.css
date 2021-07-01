@@ -373,6 +373,12 @@ h6 {
   background-color: #8ED974;
 }
 
+.header.header-dark .header-btn:hover,
+.header.header-scroll .header-btn:hover {
+  background-color: #0A4133;
+  border: 1px solid white;
+}
+
 .header.header-dark .header-action,
 .header.header-scroll .header-action {
   color: #8ED974;
@@ -480,6 +486,11 @@ h6 {
   background-color: #0A4133;
   color: white;
   transition: all .3s ease;
+}
+
+.header .header-btn:hover {
+  background-color: #8ED974;
+  border: 1px solid white;
 }
 
 @media (max-width: 1023.98px) {
