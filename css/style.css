@@ -314,6 +314,8 @@ h6 {
   align-items: center;
   justify-content: center;
   border-radius: 500px;
+  transition: all .3s ease;
+  border: 1px solid transparent;
 }
 
 .btn-primary {
@@ -321,9 +323,19 @@ h6 {
   color: white;
 }
 
+.btn-primary:hover {
+  background-color: #0A4133;
+  border: 1px solid white;
+}
+
 .btn-secondary {
   color: white;
   background-color: #0A4133;
+}
+
+.btn-secondary:hover {
+  background-color: #8ED974;
+  border: 1px solid white;
 }
 
 @media (max-width: 1023.98px) {
