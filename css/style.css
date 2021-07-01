@@ -903,6 +903,10 @@ h6 {
   margin-bottom: 3.9vw;
 }
 
+.banner a {
+  display: block;
+}
+
 .banner-scroll {
   display: none;
 }
@@ -1001,6 +1005,7 @@ h6 {
 .features-tabs {
   background-color: #F1FAEE;
   padding: 5.2vw 0;
+  overflow: hidden;
 }
 
 .features-tabs .container {
