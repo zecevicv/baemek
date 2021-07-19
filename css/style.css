@@ -903,6 +903,11 @@ h6 {
   background-color: #0A4133;
 }
 
+.banner.banner-light {
+  background-color: #F1FAEE;
+  color: #0A4133;
+}
+
 .banner .img {
   width: 66%;
   margin-left: auto;
@@ -926,7 +931,7 @@ h6 {
   margin-bottom: 3.9vw;
 }
 
-.banner a {
+.banner a:not(.btn) {
   display: block;
 }
 
@@ -1469,6 +1474,11 @@ h6 {
 .products-slider {
   padding: 4.16vw 0 0 0;
   text-align: center;
+  position: relative;
+}
+
+.products-slider.alt {
+  background-color: #D2F0C7;
 }
 
 .products-slider h2 {
@@ -1498,6 +1508,7 @@ h6 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: auto;
 }
 
 .products-slider .swiper-slide img {
@@ -1513,6 +1524,60 @@ h6 {
 .products-slider .swiper-slide p {
   max-width: 22.4vw;
   margin-bottom: 2.66vw;
+}
+
+@media (min-width: 1024px) {
+  .products-slider.alt .swiper-prev,
+  .products-slider.alt .swiper-next {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    z-index: 100;
+  }
+
+  .products-slider.alt .swiper-next {
+    left: auto;
+    right: 15%;
+  }
+
+  .products-slider.alt h2 {
+    margin-bottom: 5.2vw;
+  }
+  
+  .products-slider .container > p {
+    max-width: 49.5vw;
+    margin: 0 auto 2.85vw auto;
+  }
+  
+  .products-slider.alt .swiper-container {
+    width: 63%;
+  }
+
+  .products-slider.alt {
+    padding: 4.16vw 0 5.25vw 0;
+  }
+
+  .products-slider.alt .swiper-arrows {
+    margin-top: 0;
+  }
+
+  .products-slider.alt .swiper-slide {
+    padding: 0 2.6vw;
+  }
+
+  .products-slider.alt .swiper-slide img {
+    height: auto;
+    width: 8.85vw;
+    margin-top: auto;
+  }
+
+  .products-slider.alt .swiper-slide h3 {
+    margin: 2vw 0 .75vw 0;
+  }
+
+  .products-slider.alt .swiper-slide p {
+    margin-bottom: 1vw;
+  }
 }
 
 @media (max-width: 1023.98px) {
@@ -1549,6 +1614,15 @@ h6 {
   .products-slider .swiper-slide p {
     max-width: 90%;
     margin-bottom: 8vw;
+  }
+
+  .products-slider .container > p {
+    max-width: 85%;
+    margin: 0 auto 10vw auto;
+  }
+
+  .products-slider.alt .swiper-slide img {
+    width: 40vw;
   }
 }
 
@@ -1971,5 +2045,57 @@ h6 {
 @media (max-width: 1023.98px) {
   .product-page .features-tabs .tabs {
     margin-top: 8vw;
+  }
+}
+
+/* #Products Page
+================================================== */
+.products-page {
+  background-color: #F1FAEE;
+}
+
+/* Banner */
+.products-page .banner-bg {
+  width: 41.6vw;
+  position: absolute;
+  left: -10.4vw;
+  bottom: -13.35vw;
+}
+
+/* Products Slider */
+.products-page .products-slider {
+  margin-bottom: 7.55vw;
+}
+
+.products-page .products-slider.alt {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1023.98px) {
+  /* Banner */
+  .products-page .banner-bg {
+    width: 118vw;
+    left: auto;
+    right: -42.6vw;
+    bottom: auto;
+    top: 0;
+  }
+
+  .products-page .banner::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 55vw;
+    background-color: #F1FAEE;
+  }
+
+  .products-page .banner .container {
+    padding-bottom: 4vw;
+  }
+
+  .products-page .banner-scroll {
+    bottom: 4vw;
   }
 }
