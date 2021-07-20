@@ -2223,3 +2223,46 @@ h6 {
     margin-bottom: 1vw;
   }
 }
+
+/* #Jobs Page
+================================================== */
+.jobs-page {
+  background-color: #F1FAEE;
+}
+
+/* Banner */
+.jobs-page .banner-bg {
+  width: 41.6vw;
+  position: absolute;
+  left: -10.4vw;
+  bottom: -13.35vw;
+}
+
+@media (max-width: 1023.98px) {
+  /* Banner */
+  .jobs-page .banner-bg {
+    width: 118vw;
+    left: auto;
+    right: -42.6vw;
+    bottom: auto;
+    top: 0;
+  }
+
+  .jobs-page .banner::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 55vw;
+    background-color: #F1FAEE;
+  }
+
+  .jobs-page .banner .container {
+    padding-bottom: 4vw;
+  }
+
+  .jobs-page .banner-scroll {
+    bottom: 4vw;
+  }
+}
