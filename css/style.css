@@ -2810,3 +2810,276 @@ h6 {
     width: 2.5vw;
   }
 }
+
+/* #About Us Page
+================================================== */
+.about-us-page {
+  background-color: #F1FAEE;
+}
+
+/* #Responsibility
+================================================== */
+.responsibility {
+  padding: 8.33vw 0 10vw 0;
+  background-image: url('../img/about-us/responsibility-bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.responsibility .container {
+  width: 75%;
+}
+
+.responsibility h2 {
+  text-align: center;
+  margin-bottom: 1.1vw;
+}
+
+@media (max-width: 1023.98px) {
+  .responsibility {
+    padding: 14.6vw 0 26vw 0;
+    background-image: url('../img/about-us/responsibility-bg-mobile.png');
+  }
+
+  .responsibility .container {
+    width: 89%;
+    text-align: center;
+  }
+
+  .responsibility h2 {
+    text-align: center;
+    margin-bottom: 4vw;
+  }
+}
+
+/* #Our Vision
+================================================== */
+.our-vision .top {
+  position: relative;
+}
+
+.our-vision .img img {
+  width: 100%;
+}
+
+.our-vision .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 55%;
+}
+
+.our-vision .text h2 {
+  margin-bottom: 1vw;
+}
+
+.our-vision .bottom {
+  width: 75%;
+  margin: -5.2vw auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+}
+
+.our-vision .bottom ul {
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 3px 24px rgba(0, 0, 0, .16);
+  margin-bottom: 3.35vw;
+}
+
+.our-vision .bottom li {
+  flex: 0 0 25%;
+  background-color: white;
+  border-right: 1px solid #79bf5f3d;
+  border-bottom: 1px solid #79bf5f3d;
+  padding: 1.3vw;
+  transition: background-color .3s ease;
+}
+
+.our-vision .bottom li:hover {
+  background-color: #EFFFE9;
+}
+
+@media (max-width: 1023.98px) {
+  .our-vision .text {
+    width: 85%;
+  }
+  
+  .our-vision .text h2 {
+    margin-bottom: 2vw;
+  }
+
+  .our-vision .bottom {
+    width: 93%;
+    margin: -12.25vw auto 0 auto;
+  }
+  
+  .our-vision .bottom ul {
+    margin-bottom: 10vw;
+  }
+  
+  .our-vision .bottom li {
+    flex: 0 0 50%;
+    padding: 3.33vw;
+  }
+  
+  .our-vision .bottom li:hover {
+    background-color: #EFFFE9;
+  }
+}
+
+/* #About Banner
+================================================== */
+.about-banner {
+  padding: 7vw 0 6vw 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.about-banner .container {
+  width: 83%;
+}
+
+/* Text 1 */
+.text-1 {
+  margin-left: 6.25vw;
+  width: 55.2vw;
+  margin-bottom: 4vw;
+}
+
+.text-1 h1 {
+  margin-bottom: 1vw;
+}
+
+/* Text 2 */
+.text-2 {
+  margin-left: 49%;
+  width: 29.3vw;
+  margin-bottom: -1vw;
+}
+
+.text-2 p {
+  position: relative;
+  padding-top: 1.5vw;
+}
+
+.text-2 p::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 4vw;
+  background-color: #8ED974;
+}
+
+/* Img */
+.about-banner .img {
+  width: 44.8%;
+}
+
+.about-banner .swiper-arrows {
+  margin-top: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.about-banner .swiper-prev,
+.about-banner .swiper-next {
+  width: 1.3vw;
+  cursor: pointer;
+}
+
+.about-banner .swiper-next {
+  transform: rotate(180deg);
+  margin-left: 1.3vw;
+}
+
+/* Banner */
+.about-banner .banner-bg {
+  width: 41.6vw;
+  position: absolute;
+  top: 40%;
+  right: -10.4vw;
+}
+
+@media (max-width: 1023.98px) {
+  .about-banner {
+    padding: 6.66vw 0 14.66vw 0;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .about-banner .container {
+    width: 100%;
+  }
+  
+  /* Text 1 */
+  .text-1 {
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 14.66vw;
+    padding: 0 5.5%;
+  }
+  
+  .text-1 h1 {
+    margin-bottom: 2vw;
+  }
+
+  /* Text 2 */
+  .text-2 {
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 13.3vw;
+    display: flex;
+    padding: 0 5.5%;
+  }
+
+  .text-2 p {
+    padding-top: 0;
+  }
+
+  .text-2 p::after {
+    display: none;
+  }
+
+  /* Img */
+  .about-banner .img {
+    width: 88%;
+  }
+
+  /* Banner */
+  .about-banner .banner-scroll {
+    position: static;
+    flex: 0 0 13.3vw;
+    padding-right: 5.33vw;
+  }
+
+  .about-banner .swiper-arrows {
+    margin-top: 6.93vw;
+  }
+  
+  .about-banner .swiper-prev,
+  .about-banner .swiper-next {
+    width: 3.33vw;
+  }
+  
+  .about-banner .swiper-next {
+    margin-left: 3.33vw;
+  }
+
+  /* Banner */
+  .about-banner .banner-bg {
+    width: 100vw;
+    top: 3%;
+    right: -45vw;
+  }
+}
