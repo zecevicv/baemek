@@ -142,7 +142,7 @@ window.addEventListener('load', () => {
     });
   }
 
-  // Posts Slider
+  // Clients Slider
   if (document.querySelector('.clients .swiper-container')) {
     new Swiper('.clients .swiper-container', {
       breakpoints: {
@@ -183,7 +183,7 @@ window.addEventListener('load', () => {
     });
   }
 
-  // Posts Slider
+  // Product Info Slider
   if (document.querySelector('.product-info .swiper-container')) {
     new Swiper('.product-info .swiper-container', {
       breakpoints: {
@@ -196,6 +196,30 @@ window.addEventListener('load', () => {
         1023: {
           allowTouchMove: false,
           slidesPerView: 4,
+          centeredSlides: false,
+          loop: false
+        }
+      }
+    });
+  }
+
+  // Job Requirements Slider
+  if (document.querySelector('.job-requirements .swiper-container')) {
+    new Swiper('.job-requirements .swiper-container', {
+      navigation: {
+        nextEl: '.job-requirements .swiper-next',
+        prevEl: '.job-requirements .swiper-prev',
+      },
+      breakpoints: {
+        0: {
+          allowTouchMove: true,
+          slidesPerView: 2.25,
+          centeredSlides: true,
+          loop: true
+        },
+        1023: {
+          allowTouchMove: false,
+          slidesPerView: 8,
           centeredSlides: false,
           loop: false
         }
