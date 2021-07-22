@@ -236,6 +236,25 @@ window.addEventListener('load', () => {
       },
     });
   }
+
+  // About Banner Slider
+  if (document.querySelector('.quality .swiper-container')) {
+    new Swiper('.quality .swiper-container', {
+      navigation: {
+        nextEl: '.quality .swiper-next',
+        prevEl: '.quality .swiper-prev',
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 2
+        },
+        1024: {
+          slidesPerView: 4
+
+        }
+      }
+    });
+  }
 });
 
 /* #AOS Animations
