@@ -1512,25 +1512,39 @@ h6 {
   margin-left: 1.3vw;
 }
 
-.products-slider .swiper-slide {
+.products-slider .products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products-slider .product {
+  padding: 2vw 0;
+}
+
+.products-slider .swiper-slide,
+.products-slider .product {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: auto;
+  flex: 0 0 33.333%;
 }
 
-.products-slider .swiper-slide img {
+.products-slider .swiper-slide img,
+.products-slider .product img {
   width: 23.4vw;
   height: 23.4vw;
   object-fit: contain;
 }
 
-.products-slider .swiper-slide h3 {
+.products-slider .swiper-slide h3,
+.products-slider .product h3 {
   margin: 1vw 0 2vw 0;
 }
 
-.products-slider .swiper-slide p {
+.products-slider .swiper-slide p,
+.products-slider .product p {
   max-width: 22.4vw;
   margin-bottom: 2.66vw;
 }
@@ -1570,21 +1584,25 @@ h6 {
     margin-top: 0;
   }
 
-  .products-slider.alt .swiper-slide {
+  .products-slider.alt .swiper-slide,
+  .products-slider.alt .product {
     padding: 0 2.6vw;
   }
 
-  .products-slider.alt .swiper-slide img {
+  .products-slider.alt .swiper-slide img,
+  .products-slider.alt .product img {
     height: auto;
     width: 8.85vw;
     margin-top: auto;
   }
 
-  .products-slider.alt .swiper-slide h3 {
+  .products-slider.alt .swiper-slide h3,
+  .products-slider.alt .product h3 {
     margin: 2vw 0 .75vw 0;
   }
 
-  .products-slider.alt .swiper-slide p {
+  .products-slider.alt .swiper-slide p,
+  .products-slider.alt .product p {
     margin-bottom: 1vw;
   }
 }
@@ -1611,18 +1629,26 @@ h6 {
     margin-left: 6.66vw;
   }
 
-  .products-slider .swiper-slide img {
+  .products-slider .swiper-slide img,
+  .products-slider .product img {
     width: 77vw;
     height: 77vw;
   }
   
-  .products-slider .swiper-slide h3 {
+  .products-slider .swiper-slide h3,
+  .products-slider .product h3 {
     margin: 2vw 0 4vw 0;
   }
   
-  .products-slider .swiper-slide p {
+  .products-slider .swiper-slide p,
+  .products-slider .product p {
     max-width: 90%;
     margin-bottom: 8vw;
+  }
+
+  .products-slider .product {
+    flex: 0 0 100%;
+    padding: 5vw 0;
   }
 
   .products-slider .container > p {
@@ -1630,7 +1656,8 @@ h6 {
     margin: 0 auto 10vw auto;
   }
 
-  .products-slider.alt .swiper-slide img {
+  .products-slider.alt .swiper-slide img,
+  .products-slider.alt .product img {
     width: 40vw;
   }
 }
