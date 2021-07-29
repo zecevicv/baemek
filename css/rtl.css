@@ -1,0 +1,161 @@
+/* #Header
+================================================== */
+.header .header-menu ul li:not(:last-child) {
+  margin-left: 2vw;
+  margin-right: 0;
+}
+
+.header .header-search {
+  margin-right: 0;
+  margin-left: 1.25vw;
+}
+
+.header .header-lang {
+  margin-right: 0;
+  margin-left: 1.25vw;
+}
+
+@media (max-width: 1023.98px) {
+  .header .header-logo {
+    margin-right: 0;
+    margin-left: 11vw;
+  }
+
+  .header .header-search {
+    margin-left: 6vw;
+    margin-right: 0;
+  }
+
+  .header .header-lang {
+    margin: 0;
+  }
+
+  .banner-scroll {
+    left: auto;
+    right: 5.5%;
+  }
+}
+
+/* #Arrow
+================================================== */
+.arrow-right svg {
+  transform: rotate(180deg);
+}
+
+/* #Posts Slider
+================================================== */
+.posts-slider .post-card a {
+  margin-right: auto;
+  margin-left: 1.5vw;
+  text-align: left;
+}
+
+@media (max-width: 1023.98px) {
+  .posts-slider .container {
+    padding-right: 5.5%;
+    padding-left: 0;
+  }
+
+  .posts-slider .swiper-slide {
+    padding-left: 6vw;
+    padding-right: 0;
+  }
+
+  .posts-slider h2 {
+    direction: rtl;
+    text-align: right;
+  }
+}
+
+/* #Banner
+================================================== */
+.banner .text {
+  right: 15%;
+  left: 0;
+}
+
+.banner .img {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.homepage .banner-bg {
+  left: 0;
+  right: -10.4vw;
+}
+
+/* #Clients
+================================================== */
+.clients {
+  direction: ltr;
+}
+
+.clients h2 {
+  direction: rtl;
+}
+
+/* #Features Tabs
+================================================== */
+.features-tabs .text {
+  padding: 0 7.3vw 0 3.125vw;
+}
+
+.features-tabs .tabs {
+  padding-right: 0;
+  padding-left: 7.55vw;
+}
+
+.features-tabs .tab-navigation {
+  margin-right: 0;
+  margin-left: 10.4vw;
+}
+
+.features-tabs .tab-btn::after {
+  left: auto;
+  right: -4.7vw;
+}
+
+@media (max-width: 1023.98px) {
+  .features-tabs .tab-navigation {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .features-tabs .tab-btn {
+    margin-left: 4vw;
+    margin-right: 0;
+  }
+}
+
+/* #Media Boxes
+================================================== */
+.media-boxes {
+  direction: ltr;
+}
+
+.media-boxes .text {
+  direction: rtl;
+}
+
+/* #Footer
+================================================== */
+.footer-back-to-top {
+  margin-left: 0;
+  margin-right: 3vw;
+}
+
+.footer-menu li:not(:last-child) {
+  margin-right: 0;
+  margin-left: 1.8vw;
+}
+
+.footer-logo {
+  padding-left: 4vw;
+  padding-right: 0;
+}
+
+@media (max-width: 1023.98px) {
+  .footer-top input {
+    text-align: right;
+  }
+}
