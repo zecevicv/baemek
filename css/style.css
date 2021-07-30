@@ -1772,6 +1772,15 @@ h6 {
   .product-description .collapse > div {
     margin-top: 3.33vw;
   }
+
+  .product-description .download-link {
+    margin-top: 8vw;
+  }
+  
+  .product-description .download-link svg {
+    width: 4.4vw;
+    margin-left: 4vw;
+  }
 }
 
 /* #Product Info

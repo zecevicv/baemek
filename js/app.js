@@ -199,7 +199,11 @@ window.addEventListener('load', () => {
           centeredSlides: false,
           loop: false
         }
-      }
+      },
+      navigation: {
+        nextEl: '.product-info .swiper-next',
+        prevEl: '.product-info .swiper-prev',
+      },
     });
   }
 
@@ -237,7 +241,7 @@ window.addEventListener('load', () => {
     });
   }
 
-  // About Banner Slider
+  // Quality Slider
   if (document.querySelector('.quality .swiper-container')) {
     new Swiper('.quality .swiper-container', {
       navigation: {

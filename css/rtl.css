@@ -163,3 +163,39 @@
     text-align: right;
   }
 }
+
+/* #FAQ
+================================================== */
+.faq .chevron-down {
+  margin-right: .5vw;
+  margin-left: 0;
+}
+
+.product-description .download-link svg {
+  margin-right: .5vw;
+  margin-left: 0;
+}
+
+@media (max-width: 1023.98px) {
+  .product-description .download-link svg {
+    margin-right: 4vw;
+    margin-left: 0;
+  }
+}
+
+/* #Product Info
+================================================== */
+@media (max-width: 1023.98px) {
+  .product-info .swiper-prev, .product-info .swiper-next {
+    transform: rotate(0);
+  } 
+  
+  .product-info .swiper-prev, .product-info .swiper-prev {
+    transform: rotate(180deg);
+  }
+
+  .product-info .swiper-next {
+    margin-right: 6.66vw;
+    margin-left: 0;
+  }
+}
