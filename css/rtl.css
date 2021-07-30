@@ -335,8 +335,6 @@
 
 /* #About Us Page
 ================================================== */
-
-
 .about-banner .swiper-next {
   transform: none;
   margin-right: 1.3vw;
@@ -372,4 +370,11 @@
   .about-banner .swiper-next {
     margin-right: 3.33vw;
   }
+}
+
+/* #Team Page
+================================================== */
+.team-page .banner .img img, .team-page .banner .img picture {
+  margin-right: auto;
+  margin-left: 0;
 }
