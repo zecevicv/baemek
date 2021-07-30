@@ -1572,8 +1572,10 @@ h6 {
     margin: 0 auto 2.85vw auto;
   }
   
-  .products-slider.alt .swiper-container {
+  .products-slider.alt .swiper-container,
+  .products-slider.alt .products {
     width: 63%;
+    margin: 0 auto;
   }
 
   .products-slider.alt {

@@ -164,22 +164,26 @@ window.addEventListener('load', () => {
 
   // Products Slider
   if (document.querySelector('.products-slider .swiper-container')) {
-    new Swiper('.products-slider .swiper-container', {
-      navigation: {
-        nextEl: '.products-slider .swiper-next',
-        prevEl: '.products-slider .swiper-prev',
-      },
-      loop: true,
-      breakpoints: {
-        0: {
-          slidesPerView: 1.5,
-          centeredSlides: true
+    const productSliders =  document.querySelectorAll('.products-slider .swiper-container');
+
+    productSliders.forEach((slider) => {
+      new Swiper(slider.querySelector('.swiper-container'), {
+        navigation: {
+          nextEl: slider.querySelector('.swiper-next'),
+          prevEl: slider.querySelector('.swiper-next'),
         },
-        1023: {
-          slidesPerView: 3,
-          centeredSlides: false
+        loop: true,
+        breakpoints: {
+          0: {
+            slidesPerView: 1.5,
+            centeredSlides: true
+          },
+          1023: {
+            slidesPerView: 3,
+            centeredSlides: false
+          }
         }
-      }
+      });
     });
   }
 

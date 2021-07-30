@@ -199,3 +199,27 @@
     margin-left: 0;
   }
 }
+
+/* #Products
+================================================== */
+.products-page .banner-bg {
+  left: 0;
+}
+
+.products-slider .swiper-prev {
+  transform: rotate(180deg);
+}
+
+.products-slider .swiper-next {
+  transform: rotate(0);
+  margin-right: 1.3vw;
+  margin-left: 0;
+}
+
+.products-slider.alt .swiper-next {
+  transform: rotate(180deg);
+}
+
+.products-slider.alt .swiper-prev {
+  transform: rotate(0);
+}
