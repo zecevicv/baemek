@@ -228,6 +228,7 @@
 ================================================== */
 .jobs-page .banner-bg {
   left: 0;
+  z-index: -1;
 }
 
 .open-jobs .icons img {
@@ -298,4 +299,36 @@
 .kosher-page .banner-bg {
   left: 0;
   z-index: -1;
+}
+
+/* #Vision Page
+================================================== */
+.media-boxes-1 .download-link img {
+  margin-right: 0;
+  margin-left: 1.3vw;
+}
+
+.quality .swiper-prev {
+  transform: rotate(180deg);
+}
+
+.quality .swiper-next {
+  transform: rotate(0);
+  margin-right: 1.3vw;
+  margin-left: 0;
+}
+
+@media (max-width: 1023.98px) {
+  .media-boxes-1 .download-link img {
+    margin-right: 0;
+    margin-left: 5.33vw;
+  }
+
+  .media-boxes .text {
+    text-align: right;
+  }
+
+  .quality .swiper-next {
+    margin-right: 3.33vw;
+  }
 }
