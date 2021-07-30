@@ -332,3 +332,44 @@
     margin-right: 3.33vw;
   }
 }
+
+/* #About Us Page
+================================================== */
+
+
+.about-banner .swiper-next {
+  transform: none;
+  margin-right: 1.3vw;
+  margin-left: 0;
+}
+
+.about-banner .swiper-prev {
+  transform: rotate(180deg);
+}
+
+@media (min-width: 1024px) {
+  .text-2 {
+    margin-right: 49%;
+    margin-left: 0;
+  }
+  
+  .text-2 p::after {
+    right: 0;
+    left: auto;
+  }
+
+  .about-banner .swiper-arrows {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .about-banner .banner-scroll {
+    padding-left: 5.33vw;
+    padding-right: 0;
+  }
+
+  .about-banner .swiper-next {
+    margin-right: 3.33vw;
+  }
+}
