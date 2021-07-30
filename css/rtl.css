@@ -292,3 +292,10 @@
     padding-right: 0;
   }
 }
+
+/* #Kosher Page
+================================================== */
+.kosher-page .banner-bg {
+  left: 0;
+  z-index: -1;
+}
