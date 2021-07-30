@@ -223,3 +223,72 @@
 .products-slider.alt .swiper-prev {
   transform: rotate(0);
 }
+
+/* #Jobs Page
+================================================== */
+.jobs-page .banner-bg {
+  left: 0;
+}
+
+.open-jobs .icons img {
+  margin-right: 0;
+  margin-left: .5vw;
+}
+
+.open-jobs .collapse-toggler .simbol .icon img {
+  margin-right: .4vw;
+  margin-left: 0;
+}
+
+.open-jobs .collapse-toggler {
+  left: 2.8vw;
+  right: auto;
+}
+
+.open-jobs .collapsible::after {
+  left: auto;
+  right: 0;
+}
+
+.open-jobs .collapsible {
+  padding: 2.8vw 4vw 2.8vw 2.8vw;
+}
+
+@media (max-width: 1023.98px) {
+  .open-jobs .icons img {
+    margin-right: 0;
+    margin-left: 2.66vw;
+  }
+
+  .open-jobs .show-more img {
+    margin-right: 2vw;
+    margin-left: 0;
+  }
+
+  .open-jobs .collapse-toggler .simbol .icon img {
+    margin-right: 2vw;
+    margin-left: 0;
+  }
+
+  .job-requirements .swiper-next {
+    transform: rotate(0);
+  } 
+  
+  .job-requirements .swiper-prev {
+    transform: rotate(180deg);
+  }
+
+  .job-requirements .swiper-next {
+    margin-right: 6.66vw;
+    margin-left: 0;
+  }
+
+  .open-jobs .collapsible {
+    padding: 11.6vw 10.6vw 11.6vw 6.66vw;
+  }  
+
+  .open-jobs .icons {
+    padding-left: 10vw;
+    padding-right: 0;
+  }
+}
