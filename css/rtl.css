@@ -16,9 +16,8 @@
 }
 
 @media (max-width: 1023.98px) {
-  .header .header-logo {
-    margin-right: 0;
-    margin-left: 11vw;
+  .header .container {
+    flex-direction: row-reverse;
   }
 
   .header .header-search {
@@ -116,6 +115,11 @@
 }
 
 @media (max-width: 1023.98px) {
+  .features-tabs .tabs {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
   .features-tabs .tab-navigation {
     margin-left: 0;
     margin-right: 0;
